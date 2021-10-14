@@ -6,5 +6,4 @@ def insertion_sort(array: list):
         while i >= 0 and array[i] > value:
             array[i + 1] = array[i]
             i -= 1
-            print(f"{i=}", end=" ")
         array[i + 1] = value

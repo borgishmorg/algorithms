@@ -1,8 +1,6 @@
 def merge_sort_stack(array: list):
     "merge_sort sort array inplace and return it"
 
-    print()
-
     buffer = [None for _ in array]
     to_sort_stack = list()
     to_merge_stack = list()
