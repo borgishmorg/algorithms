@@ -8,5 +8,6 @@ from ..linear_time_sorts.test_arrays import TEST_ARRAYS
     argvalues=TEST_ARRAYS,
 )
 def test_heap_sort(array: list, sorted_array: list):
-    sorted_array.reverse()  # heap_sort sorts in descending order
-    assert heap_sort(array) == sorted_array
+    assert heap_sort(array) == [
+        *reversed(sorted_array)
+    ]  # heap_sort sorts in descending order
