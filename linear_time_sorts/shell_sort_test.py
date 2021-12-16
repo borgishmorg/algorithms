@@ -1,5 +1,5 @@
 import pytest
-from .merge_sort import merge_sort
+from .shell_sort import shell_sort
 from .test_arrays import TEST_ARRAYS
 
 
@@ -7,5 +7,5 @@ from .test_arrays import TEST_ARRAYS
     argnames="array, sorted_array",
     argvalues=TEST_ARRAYS,
 )
-def test_merge_sort(array: list, sorted_array: list):
-    assert merge_sort(array) == sorted_array
+def test_shell_sort(array: list, sorted_array: list):
+    assert shell_sort(array) == sorted_array
